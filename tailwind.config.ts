@@ -20,8 +20,26 @@ const config: Config = {
         "darkbackground": "#030c1d",
         "cyan-800": "#091f3c",
         "gray-400": "#54657b",
-        "green-800": "#279081"
+        "gray-350": "#0a1629",
+        "gray-250": "#99a6cc",
+        "green-800": "#279081",
+        "cyan-200": "#62729e"
       },
+      keyframes: {
+        teste: {
+          '0%': { transform: 'rotate(0.0deg)' },
+          '10%': { transform: 'rotate(14deg)' },
+          '20%': { transform: 'rotate(-8deg)' },
+          '30%': { transform: 'rotate(14deg)' },
+          '40%': { transform: 'rotate(-4deg)' },
+          '50%': { transform: 'rotate(10.0deg)' },
+          '60%': { transform: 'rotate(0.0deg)' },
+          '100%': { transform: 'rotate(0.0deg)' },
+        }
+      },
+      animation: {
+        'waving': 'teste 2s linear infinite'
+      }
     },
   },
   plugins: [],
