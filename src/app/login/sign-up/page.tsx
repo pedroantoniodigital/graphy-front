@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import CustomizedInput from "@/components/forms/input";
 import { Envelope, Key } from "phosphor-react";
 
-export default function SignIn() {
+export default function SignUp() {
 
   const { push } = useRouter();
 
@@ -17,8 +17,9 @@ export default function SignIn() {
           <p className="text-lg text-white bold font-semibold">GRAPHY</p>
         </div>
         <div className="flex flex-col text-center py-4 gap-1">
-          <span className=" text-green-800 text-2xl font-bold tracking-tight ">Bem vindo</span>
+          <span className=" text-green-800 text-2xl font-bold tracking-tight ">Registro</span>
           <span className=" text-cyan-200 text-base font-medium tracking-tight">Insira suas credenciais para continuar</span>
+          <span className=" text-subtitle text-sm font-semibold tracking-tight py-4">Registre-se com seu Email</span>
         </div>
         <div className='flex flex-col gap-4'>
           <CustomizedInput placeholder='Email' text="oi" icon={<Envelope className='w-5 h-5' name='teste' />} />
@@ -38,7 +39,7 @@ export default function SignIn() {
         </div>
         <hr  className="my-6 h-px border-t-0 bg-gray-700" />
         <div className="flex justify-center text-sm text-white font-semibold divide-y divide-dashed cursor-pointer hover:underline">
-          <p onClick={() => push('/login/sign-up')}> Não possui uma conta?</p>
+          <p onClick={() => push('/login/sign-in')}> Não possui uma conta?</p>
         </div>
       </div>
     </main>

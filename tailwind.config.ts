@@ -8,22 +8,33 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      dropShadow: {
+        'green': '0px 10px rgba(39, 144, 129, 0.2)'
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       colors: {
-        "gray-200": "#121214",
-        "gray-300": "#202024",
         "white-200": "#bbc6ee",
-        "darkbackground": "#030c1d",
-        "cyan-800": "#091f3c",
-        "gray-400": "#54657b",
-        "gray-350": "#0a1629",
+        //Gray
+        "gray-200": "#121214",
         "gray-250": "#99a6cc",
+        "gray-300": "#202024",
+        "gray-350": "#0a1629",
+        "gray-370": "#353d5b",
+        "gray-400": "#54657b",
+        // Green
         "green-800": "#279081",
-        "cyan-200": "#62729e"
+        //Cyan
+        "cyan-800": "#091f3c",
+        "cyan-200": "#62729e",
+        "subtitle": "#b3bfe6",
+        //Purple 
+        "purple-theme": "#7267ef",
+        //Background
+        "darkbackground": "#030c1d",
       },
       keyframes: {
         teste: {

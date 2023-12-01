@@ -13,6 +13,36 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+
+.dashedSideBorder {
+  border-width: 2px; 
+  border-left-width: 4px;
+  border-color: #353d5b; 
+  border-style: dashed dashed dashed solid; 
+  border-left-color: #90caf9; 
+
+  border-radius: 8px; 
+  width: 2rem; 
+  height: 2rem; 
+
+  cursor: pointer;
+}
+
+.dashedNavBorder {
+  border-width: 2px; 
+  border-top-width: 4px;
+  border-color: #353d5b; 
+  border-style: solid dashed dashed dashed; 
+  border-top-color: #90caf9; 
+
+  border-radius: 8px; 
+  width: 2rem; 
+  height: 2rem; 
+
+  cursor: pointer;
+}
+
+
 /* 
 body {
   color: rgb(var(--foreground-rgb));
